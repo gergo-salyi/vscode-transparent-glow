@@ -1,45 +1,45 @@
 # vscode-transparent-glow
 transparent vscode css
 
-> 原文链接 [https://jinkey.ai/post/tech/ru-he-pei-zhi-tou-ming-fa-guang-de-sao-qi-vscode](https://jinkey.ai/post/tech/ru-he-pei-zhi-tou-ming-fa-guang-de-sao-qi-vscode)
-转载请注明出处
+> Original link [https://jinkey.ai/post/tech/ru-he-pei-zhi-tou-ming-fa-guang-de-sao-qi-vscode](https://jinkey.ai/post /tech/ru-he-pei-zhi-tou-ming-fa-guang-de-sao-qi-vscode)
+Please indicate the source
 
-> 交流QQ群 706964206
+> Exchange QQ group 706964206
 
-最新支持 vscode 1.36 版本
+Latest support for vscode 1.36 version
 
-# 1 安装自定义 JS 和 CSS 插件
-![插件截图](https://upload-images.jianshu.io/upload_images/854231-b2e5e95d9c7571a2.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+# 1 Install custom JS and CSS plugins
+![Plugin screenshot](https://upload-images.jianshu.io/upload_images/854231-b2e5e95d9c7571a2.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
-# 2 安装发光主题
-![插件截图](https://upload-images.jianshu.io/upload_images/854231-01920da488773df2.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+# 2 Install glow theme
+![Plugin screenshot](https://upload-images.jianshu.io/upload_images/854231-01920da488773df2.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
 
-# 3 添加样式配置文件
-在 VSCode 安装目录（自己随便选择一个文件夹也可以），放入以下文件。
-为了方便下载，文件整理到了 [Github-Jinkeycode](https://github.com/Jinkeycode)/[vscode-transparent-glow](https://github.com/Jinkeycode/vscode-transparent-glow)，欢迎 star。
+# 3 Add style configuration file
+In the VSCode installation directory (you can choose a folder at will), put the following files.
+For the convenience of downloading, the files are organized into [Github-Jinkeycode](https://github.com/Jinkeycode)/[vscode-transparent-glow](https://github.com/Jinkeycode/vscode-transparent-glow), welcome star.
 
 
 `enable-electron-vibrancy.js`
-开启 electron 透明支持
+Open electron transparent support
 ![](https://upload-images.jianshu.io/upload_images/854231-bd77f033703fcede.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
 `vscode-vibrancy-style.css`
-这里使用 [@孤狼](https://blog.evolify.cn/) 大佬提供的样式
+Here use the style provided by [@孤狼](https://blog.evolify.cn/)
 ![](https://upload-images.jianshu.io/upload_images/854231-fcefef968258caf0.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
 `synthwave84.css`
-文字发光样式，样式请在 Github 获取。如果要不发光的，可以使用 `synthwave84-noglow.css`。可以 watch [https://github.com/robb0wen/synthwave-vscode](https://github.com/robb0wen/synthwave-vscode) 保持更新通知。
+Text glow style, please get the style on Github. If you want to not shine, you can use `synthwave84-noglow.css`. You can watch [https://github.com/robb0wen/synthwave-vscode](https://github.com/robb0wen/synthwave-vscode) to keep updated notifications.
 
 `toolbar.css`
-引入以上大神的样式配置之后，左边导航栏有部分标题还是未透明状态，我自己修改了配置，引入即可。
+After introducing the above style configuration of the Great God, some of the titles in the left navigation bar are still not transparent. I modified the configuration myself and can import it.
 ![](https://upload-images.jianshu.io/upload_images/854231-448a8c07397595fd.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
 `terminal.css`
-使 vscode 内置的终端透明
+Make the built-in terminal of vscode transparent
 ![](http://upload-images.jianshu.io/upload_images/854231-4e961151a1a22352?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
-终端光标颜色修改，由[@manonloki](www.manonloki.com) 提供
+Modify the color of the terminal cursor, provided by [@manonloki](www.manonloki.com)
 ```
 .panel.integrated-terminal .xterm-cursor,
 .xterm-cursor-block {
@@ -47,22 +47,20 @@ transparent vscode css
 }
 ```
 
-# 4 修改 VSCode 配置文件
+# 4 Modify VSCode configuration file
 ![](https://upload-images.jianshu.io/upload_images/854231-fbd4da9e499e6c4b.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
-点击上图 `在 setting.json 中编辑`，打开后加入配置(**不需要大括号**，直接把 key-value 加入原有 json 即可)：
+Click on the figure above `Edit in setting.json`, open it and add the configuration (**No braces**, just add the key-value to the original json):
 ![setting.json](http://upload-images.jianshu.io/upload_images/854231-50272ef5974e1d00?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
-# 5 重加载
-按下 Ctrl + Shift + P，运行 "Reload Custom CSS and JS", 重启 vscode 即可。如果提示`VSCode 已经损坏`，选择右上角齿轮“不再提示”即可。
+# 5 reload
+Press Ctrl + Shift + P, run "Reload Custom CSS and JS", and restart vscode. If it says `VSCode is damaged`, just select the gear "Don't prompt again" in the upper right corner.
 
-# 6 总结
-成品效果如图，不懂的可以加小助手微信 udujjb 拉你进群询问
+#6 summary
+The effect of the finished product is shown in the figure. If you don’t understand, you can add a small assistant WeChat udujjb to pull you into the group and ask
 ![](https://upload-images.jianshu.io/upload_images/854231-203ae82f1544bf0f.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
-以上教程是基于 MacOS 的，Linux 用户如何开启透明请参考；Windows 的electron暂不支持vibrancy模式，可以使用插件 [GlassIt-VSC](https://marketplace.visualstudio.com/items?itemName=s-nlf-fh.glassit) 设置透明。
+The above tutorial is based on MacOS. For Linux users, please refer to how to turn on transparency; Windows electron does not support vibrancy mode, you can use the plug-in [GlassIt-VSC](https://marketplace.visualstudio.com/items?itemName=s-nlf -fh.glassit) Set transparency.
 
-[Custom CSS and JS Loader 配置](https://github.com/be5invis/vscode-custom-css#getting-started)
+[Custom CSS and JS Loader configuration](https://github.com/be5invis/vscode-custom-css#getting-started)
 
-[Linux 透明窗口](https://github.com/sergei-dyshel/vscode/blob/master/README.fork.md)
-
-
+[Linux Transparent Window](https://github.com/sergei-dyshel/vscode/blob/master/README.fork.md)
